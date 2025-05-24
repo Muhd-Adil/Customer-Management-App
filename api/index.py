@@ -74,8 +74,3 @@ def get_customers(
         "page": page,
         "page_size": page_size
     }
-
-#(Optional) Make it runnable with `python customers.py`
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("customers:app", host="0.0.0.0", port=8000, reload=True)
